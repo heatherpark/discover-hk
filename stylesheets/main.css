@@ -1,0 +1,410 @@
+/* BASE - Base styles, variables, mixins */
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,900);
+/* line 1, ../sass/base/_base.scss */
+html, body {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  color: #3C3C3C;
+}
+
+/* line 10, ../sass/base/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* line 14, ../sass/base/_base.scss */
+a {
+  text-decoration: none;
+  color: #3C3C3C;
+}
+/* line 18, ../sass/base/_base.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 23, ../sass/base/_base.scss */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* line 28, ../sass/base/_base.scss */
+figure {
+  display: inline-block;
+  overflow: hidden;
+}
+
+/* line 33, ../sass/base/_base.scss */
+.small-gutter > [class*='col-'] {
+  padding-right: 3px;
+  padding-left: 3px;
+}
+
+/* line 38, ../sass/base/_base.scss */
+.small-gutter {
+  padding: 0 15px;
+}
+
+/* COMPONENTS - Buttons, typography, etc. */
+/* HEADERS */
+/* line 3, ../sass/components/_typography.scss */
+h1 {
+  font-size: 2.625em;
+  font-weight: 700;
+  font-letter-spacing: 0.03125em;
+}
+
+/* line 11, ../sass/components/_typography.scss */
+h2 {
+  font-style: italic;
+  font-size: 1.9375em;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* line 20, ../sass/components/_typography.scss */
+h3 {
+  font-size: 1.25em;
+  font-weight: 700;
+  letter-spacing: 0.02688em;
+}
+
+/* SECOND NAVIGATION MENU */
+/* line 30, ../sass/components/_typography.scss */
+.second-nav a {
+  font-weight: 400;
+  font-size: 0.875em;
+  padding: 25px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.4s;
+}
+/* line 39, ../sass/components/_typography.scss */
+.second-nav a:hover, .second-nav a:active {
+  color: #3C3C3C;
+  border-bottom: 2px solid #A30E0A;
+}
+
+/* SECTION - EVENTS */
+/* line 48, ../sass/components/_typography.scss */
+.event-date {
+  font-size: 0.875em;
+  font-weight: 400;
+}
+
+/* line 55, ../sass/components/_typography.scss */
+.event-name {
+  font-size: 1em;
+}
+
+/* line 59, ../sass/components/_typography.scss */
+.event-description {
+  font-size: 0.875em;
+}
+
+/* SECTION - APP */
+/* line 65, ../sass/components/_typography.scss */
+.section-mobile-app {
+  color: #FFF;
+}
+
+/* FOOTER */
+/* line 72, ../sass/components/_typography.scss */
+.sitemap a {
+  font-size: 0.8125em;
+  transition: color 0.4s;
+}
+/* line 76, ../sass/components/_typography.scss */
+.sitemap a:hover {
+  color: #A30E0A;
+}
+
+/* line 83, ../sass/components/_typography.scss */
+.sitemap-col li:first-child a {
+  font-weight: 700;
+}
+
+/* line 1, ../sass/components/_buttons.scss */
+.btn {
+  display: inline-block;
+  padding: 0.5em em 17;
+  border-radius: 30px;
+}
+
+/* line 7, ../sass/components/_buttons.scss */
+.btn-ghost {
+  color: #A30E0A;
+  border: 1px solid #A30E0A;
+  background-color: #FFF;
+  transition: background-color 0.4s, color 0.4s;
+}
+/* line 13, ../sass/components/_buttons.scss */
+.btn-ghost:hover {
+  background-color: #A30E0A;
+  color: #FFF;
+}
+
+/* line 19, ../sass/components/_buttons.scss */
+.btn-fill {
+  color: #FFF;
+  background-color: #A30E0A;
+  transition: background-color 0.4s, color 0.4s;
+}
+/* line 24, ../sass/components/_buttons.scss */
+.btn-fill:hover {
+  background-color: #8b0c09;
+  color: #FFF;
+}
+
+/* line 30, ../sass/components/_buttons.scss */
+.section-events .btn-ghost {
+  font-size: 0.75em;
+  letter-spacing: 0.03125em;
+}
+
+/* line 35, ../sass/components/_buttons.scss */
+.section-events .btn-fill {
+  font-size: 0.9375em;
+  letter-spacing: 0.0375em;
+}
+
+/* LAYOUTS - Page layouts */
+/* line 1, ../sass/layouts/_header.scss */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url("../images/cover-photo-large.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+/* line 9, ../sass/layouts/_header.scss */
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* line 14, ../sass/layouts/_header.scss */
+.headline-text {
+  color: #FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 1, ../sass/layouts/_sections.scss */
+section {
+  padding: 6.25em 0;
+}
+/* line 4, ../sass/layouts/_sections.scss */
+section h3 {
+  margin-bottom: 10px;
+}
+
+/* SECTION - EVENTS */
+/* line 11, ../sass/layouts/_sections.scss */
+.event-text {
+  border-left: 1px solid #DFDFDF;
+  border-right: 1px solid #DFDFDF;
+  border-bottom: 1px solid #DFDFDF;
+  padding: 30px 20px;
+}
+
+/* line 20, ../sass/layouts/_sections.scss */
+.event-date {
+  margin-bottom: 15px;
+}
+
+/* line 25, ../sass/layouts/_sections.scss */
+.section-events p {
+  margin-bottom: 16px;
+}
+/* line 29, ../sass/layouts/_sections.scss */
+.section-events h4 {
+  margin-bottom: 7px;
+}
+/* line 33, ../sass/layouts/_sections.scss */
+.section-events .btn-fill {
+  margin-top: 20px;
+}
+/* line 37, ../sass/layouts/_sections.scss */
+.section-events .col-md-4 {
+  padding-bottom: 20px;
+}
+
+/* SECTION - MOBILE APP */
+/* line 45, ../sass/layouts/_sections.scss */
+.section-mobile-app .content {
+  float: none;
+  margin: 0 auto;
+}
+
+/* line 50, ../sass/layouts/_sections.scss */
+.app-store-badges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 55, ../sass/layouts/_sections.scss */
+.app-store-badges figure {
+  width: 135px;
+}
+
+/* line 60, ../sass/layouts/_sections.scss */
+.section-mobile-app {
+  background-image: linear-gradient(rgba(163, 14, 10, 0.73), rgba(163, 14, 10, 0.73)), url("../images/app-bg-large.jpg");
+  background-size: cover;
+  background-position: 50% 75%;
+}
+/* line 67, ../sass/layouts/_sections.scss */
+.section-mobile-app p {
+  margin-bottom: 20px;
+}
+/* line 71, ../sass/layouts/_sections.scss */
+.section-mobile-app figure:first-child {
+  margin-right: 5px;
+}
+
+/* SECTION - SOCIAL MEDIA */
+/* line 78, ../sass/layouts/_sections.scss */
+.section-social-media {
+  border-bottom: 1px solid #DFDFDF;
+  padding: 4em 0;
+}
+/* line 81, ../sass/layouts/_sections.scss */
+.section-social-media span {
+  color: #A30E0A;
+}
+/* line 85, ../sass/layouts/_sections.scss */
+.section-social-media img {
+  transform: scale(1.3);
+}
+
+/* line 90, ../sass/layouts/_sections.scss */
+.social-media-icons {
+  margin-top: 10px;
+  font-size: 2em;
+}
+/* line 94, ../sass/layouts/_sections.scss */
+.social-media-icons a {
+  transition: color 0.4s;
+}
+/* line 97, ../sass/layouts/_sections.scss */
+.social-media-icons a:hover {
+  color: #A30E0A;
+}
+
+/* first navigation menu */
+/* line 3, ../sass/layouts/_navigation.scss */
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/* line 8, ../sass/layouts/_navigation.scss */
+.navbar-default .navbar-brand {
+  color: #FFF;
+}
+
+/* line 12, ../sass/layouts/_navigation.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #FFF;
+}
+/* line 15, ../sass/layouts/_navigation.scss */
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #cccccc;
+}
+
+/* line 20, ../sass/layouts/_navigation.scss */
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+/* line 23, ../sass/layouts/_navigation.scss */
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+/* line 28, ../sass/layouts/_navigation.scss */
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border: none;
+}
+
+/* line 33, ../sass/layouts/_navigation.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+
+/* line 37, ../sass/layouts/_navigation.scss */
+.first-nav {
+  margin-top: 10px;
+}
+/* line 40, ../sass/layouts/_navigation.scss */
+.first-nav a {
+  font-weight: 400;
+  font-size: 0.8125em;
+  letter-spacing: 0.0375em;
+  transition: color 0.4s;
+}
+/* line 48, ../sass/layouts/_navigation.scss */
+.first-nav a:hover {
+  color: #cccccc;
+}
+/* line 53, ../sass/layouts/_navigation.scss */
+.first-nav ul a:hover {
+  background-color: transparent;
+}
+
+/* line 58, ../sass/layouts/_navigation.scss */
+.mobile-nav {
+  position: relative;
+  z-index: 999;
+}
+@media only screen and (max-width: 767px) {
+  /* line 58, ../sass/layouts/_navigation.scss */
+  .mobile-nav {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+/* line 67, ../sass/layouts/_navigation.scss */
+.first-nav .glyphicon {
+  color: #FFF;
+}
+
+/* line 71, ../sass/layouts/_navigation.scss */
+.navbar-brand span {
+  font-weight: 900;
+}
+
+/* second navigation menu */
+/* line 77, ../sass/layouts/_navigation.scss */
+.second-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 25px 0;
+  border-bottom: 1px solid #DFDFDF;
+}
+@media only screen and (max-width: 767px) {
+  /* line 77, ../sass/layouts/_navigation.scss */
+  .second-nav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 89, ../sass/layouts/_navigation.scss */
+  .hidden-nav {
+    display: none;
+  }
+}
+
+/* line 1, ../sass/layouts/_footer.scss */
+footer {
+  padding: 50px 0;
+}
+@media only screen and (max-width: 767px) {
+  /* line 1, ../sass/layouts/_footer.scss */
+  footer {
+    display: none;
+  }
+}

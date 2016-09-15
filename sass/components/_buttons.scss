@@ -1,0 +1,38 @@
+.btn {
+	display: inline-block;
+	padding: em(8) em (17);
+	border-radius: 30px;
+}
+
+.btn-ghost {
+	color: $text-accent-color;
+	border: 1px solid $text-accent-color;
+	background-color: #FFF;
+	transition: background-color $transition-duration, color $transition-duration;
+
+	&:hover {
+		background-color: $text-accent-color;
+		color: #FFF;
+	}
+}
+
+.btn-fill {
+	color: #FFF;
+	background-color: $text-accent-color;
+	transition: background-color $transition-duration, color $transition-duration;
+
+	&:hover {
+		background-color: darken($text-accent-color, 5);
+		color: #FFF;
+	}
+}
+
+.section-events .btn-ghost {
+	font-size: em(12);
+	letter-spacing: em(0.5);
+}
+
+.section-events .btn-fill {
+	font-size: em(15);
+	letter-spacing: em(0.6);
+}
