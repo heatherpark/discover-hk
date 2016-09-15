@@ -1,0 +1,93 @@
+/* first navigation menu */
+
+.navbar-default {
+	background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+    color: #FFF;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #FFF;
+
+    &:hover, &:focus {
+    	color: darken(#FFF, 20);
+    }
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+
+    &:hover, &:focus {
+    	background-color: transparent;
+    }
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #FFF;
+}
+
+.first-nav {
+	margin-top: 10px;
+
+	a {
+		font: {
+			weight: 400;
+			size: em(13);
+		}
+		letter-spacing: em(0.6);
+		transition: color $transition-duration;
+
+		&:hover {
+			color: darken(#FFF, 20%);
+		}
+	}
+
+	ul a:hover {
+		background-color: transparent;
+	}
+}
+
+.mobile-nav {
+	@media only screen and (max-width: 767px) {
+		background-color: fade-out(#000, 0.4);
+	}
+
+	position: relative;
+	z-index: 999;
+}
+
+.first-nav .glyphicon {
+	color: #FFF;
+}
+
+.navbar-brand span {
+	font-weight: 900;
+}
+
+/* second navigation menu */
+
+.second-nav {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: $second-nav-padding;
+	border-bottom: 1px solid $light-gray;
+
+	@media only screen and (max-width: 767px) {
+		display: none;
+	}
+}
+
+.hidden-nav {
+	@media only screen and (min-width: 768px) {
+		display: none;
+	}
+}

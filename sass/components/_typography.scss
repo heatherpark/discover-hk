@@ -1,0 +1,85 @@
+/* HEADERS */
+
+h1 {
+	font: {
+		size: em(42);
+		weight: 700;
+		letter-spacing: em(0.5);
+	}
+}
+
+h2 {
+	font: {
+		style: italic;
+		size: em(31);
+		weight: 300;
+	}
+	margin: 0;
+}
+
+h3 {
+	font: {
+		size: em(20);
+		weight: 700;
+	}
+	letter-spacing: em(0.43);
+}
+
+/* SECOND NAVIGATION MENU */
+
+.second-nav a {
+	font: {
+		weight: 400;
+		size: em(14);
+	}
+	padding: $second-nav-padding;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom $transition-duration;
+
+	&:hover,
+	&:active {
+		color: $primary-text-color;
+		border-bottom: 2px solid $text-accent-color;
+	}
+}
+
+/* SECTION - EVENTS */
+
+.event-date {
+	font: {
+		size: em(14);
+		weight: 400;
+	}
+}
+
+.event-name {
+	font-size: em(16);
+}
+
+.event-description {
+	font-size: em(14);
+}
+
+/* SECTION - APP */
+
+.section-mobile-app {
+	color: #FFF;
+}
+
+/* FOOTER */
+
+.sitemap {
+	a {
+		font-size: em(13);
+		transition: color $transition-duration;
+
+		&:hover {
+			color: $text-accent-color;
+		}
+
+	}
+}
+
+.sitemap-col li:first-child a {
+	font-weight: 700;
+}
